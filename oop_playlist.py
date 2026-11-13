@@ -52,7 +52,7 @@ OfficeProgram=ProgramModel(
     "computer_office_program",
     "d2424b15-2195-4cde-a977-e0beed7041e8",
     "Computer Basics & Office Professional Program",
-    False
+    False,
     "All Ages",
     [
       "Microsoft 365 Suite",
@@ -63,8 +63,8 @@ OfficeProgram=ProgramModel(
 
 )      
 
-KidProgram=ProgramModel(
-    "Fun and interactive lessons that help kids learn coding, logical thinking, and problem-solving through hands-on projects."
+KidProgram = ProgramModel(
+    "Fun and interactive lessons that help kids learn coding, logical thinking, and problem-solving through hands-on projects.",
     "kid_program",
     "daaa9c3d-def5-4c38-b05b-a6f07927f4c9",
     "Coding For Kid Program",
@@ -80,7 +80,7 @@ KidProgram=ProgramModel(
       "BBC micro:bit"
     ]
 )
-CareerProgram=ProgramMo(
+CareerProgram=ProgramModel(
     "Focused training designed to prepare you with practical skills, real projects, and career readiness for a developer role.",
     "career_program",
     "2a3e6600-49bb-44cf-b743-83104ced8a07",
@@ -99,3 +99,9 @@ CareerProgram=ProgramMo(
       "GitHub Portfolio"
     ]
 )
+
+plmodel=ProgramListModel()
+plmodel.programAdd_List(DeveloperProgram)
+plmodel.programAdd_List(OfficeProgram)
+plmodel.programAdd_List(KidProgram)
+plmodel.programAdd_List(CareerProgram)
